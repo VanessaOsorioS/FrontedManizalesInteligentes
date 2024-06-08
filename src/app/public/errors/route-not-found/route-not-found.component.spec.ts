@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListEventsComponent } from './list-events.component';
+import { RouteNotFoundComponent } from './route-not-found.component';
 
-describe('ListEventsComponent', () => {
-  let component: ListEventsComponent;
-  let fixture: ComponentFixture<ListEventsComponent>;
+describe('RouteNotFoundComponent', () => {
+  let component: RouteNotFoundComponent;
+  let fixture: ComponentFixture<RouteNotFoundComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ListEventsComponent]
+      imports: [RouteNotFoundComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ListEventsComponent);
+    fixture = TestBed.createComponent(RouteNotFoundComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
