@@ -1,25 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+<app-header></app-header>
+<app-side-menu></app-side-menu>
 
-</body>
-</html>
-<nav>
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo center">Logo</a>
-    <ul id="nav-mobile" class="left hide-on-med-and-down">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="collapsible.html">JavaScript</a></li>
-    </ul>
+<section class="reciente">
+  <h3>Reciente</h3>
+  <div class="carousel">
+      <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+      <div class="carousel-track-container">
+          <ul class="carousel-track">
+              <li class="carousel-slide">
+                  <img src="jbalvin.jpg" alt="J Balvin Arcoiris">
+                  <p>Manizales, Enero 04 2020<br>Estadio Palo Grande</p>
+              </li>
+              <li class="carousel-slide">
+                  <img src="feria-del-libro.jpg" alt="Feria del Libro">
+                  <p>Feria del Libro<br>Exposición de artistas locales</p>
+              </li>
+          </ul>
+      </div>
+      <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
   </div>
-</nav>
-
-
+</section>
+<section class="proximos-eventos">
+  <h3>Próximos Eventos</h3>
+  <div class="evento">
+      <p>30/5<br>Concierto Manizales Band</p>
+  </div>
+  <div class="evento">
+      <p>17/6<br>Diviértete con tu mascota</p>
+  </div>
+</section>
+<app-footer></app-footer>
 
 
